@@ -98,3 +98,5 @@ gulp.task('watch', ['browser-sync'], function () {
   gulp.watch(src + '/assets/styles/**/*.scss', ['css']);
   gulp.watch(src + '/assets/scripts/**/*.js', ['js']);
 });
+
+gulp.task('default', ['html', 'css', 'js', 'fonts', 'watch']);

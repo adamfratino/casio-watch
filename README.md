@@ -19,3 +19,11 @@ Trying to rebuild my Casio digital watch with HTML, CSS, JS.
 - Reset the stopwatch using the `Light` button
 
 http://88mpg.github.io/casio-watch
+
+### Setup
+
+Install node modules using `npm install`
+
+After installataion completes, use `gulp` command to build and watch (get it?) the project.
+
+**NOTE:** Browsersync will initiate a server and open the project automatically.
