@@ -24,6 +24,6 @@ http://88mpg.github.io/casio-watch
 
 Install node modules using `npm install`
 
-After installataion completes, use `gulp` command to build and watch (get it?) the project.
+After installation completes, use `gulp` command to build and watch (get it?) the project.
 
 **NOTE:** Browsersync will initiate a server and open the project automatically.
