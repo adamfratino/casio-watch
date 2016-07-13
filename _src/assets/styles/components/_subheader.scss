@@ -1,0 +1,17 @@
+&__subheader {
+	background-color: map-get($color, blue);
+	display: inline-block;
+	padding: 5px 25px;
+	text-align: center;
+	width: 100%;
+	span {
+		color: white;
+		font-family: map-get($font, logo);
+		font-size: 1.3em;
+		font-style: italic;
+		font-variant: small-caps;
+		font-weight: 400;
+		letter-spacing: 3px;
+		-webkit-text-stroke: 1px currentColor;
+	}
+}

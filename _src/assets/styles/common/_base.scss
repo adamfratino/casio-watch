@@ -1,0 +1,37 @@
+body {
+	background-color: gold;
+	font-size: 14px;
+	margin: 0;
+	position: relative;
+	-webkit-user-select: none;
+}
+
+* { box-sizing: border-box; }
+
+.wrapper {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.band {
+	position: absolute;
+	background-color: #222;
+	box-shadow: 0 0 6px black;
+	height: 100vh;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 280px;
+}
+
+#{$project-prefix} {
+	background-color: map-get($color, case);
+	border: map-get($watchProps, borderWidth) solid darken(silver, 10%);
+	border-radius: 40px;
+	box-shadow: 0 0 6px black;
+	display: inline-block;
+	margin-top: calc(50vh - 141px);
+	padding: 25px 40px;
+	position: relative;
+}

@@ -1,0 +1,41 @@
+&__buttons {
+	button {
+		background-color: darken(silver, 15%);
+		border: 1px solid darken(silver, 50%);
+		height: 20px;
+		outline: 0;
+		padding: 0;
+		position: absolute;
+		min-width: 10px;
+
+		&:hover { cursor: pointer; }
+		&:active { animation: buttonHold 50ms forwards; }
+	}
+
+	&-light {
+		border-right: 0;
+		border-top-left-radius: 3px;
+		border-bottom-left-radius: 3px;
+		box-shadow: inset -5px 0 5px -5px black;
+		right: calc(100% + #{map-get($watchProps, borderWidth)});
+		top: 85px;
+	}
+
+	&-mode {
+		border-right: 0;
+		border-top-left-radius: 3px;
+		border-bottom-left-radius: 3px;
+		box-shadow: inset -5px 0 5px -5px black;
+		bottom: 70px;
+		right: calc(100% + #{map-get($watchProps, borderWidth)});
+	}
+
+	&-startStop {
+		border-left: none;
+		border-top-right-radius: 3px;
+		border-bottom-right-radius: 3px;
+		box-shadow: inset 5px 0 5px -5px black;
+		bottom: 70px;
+		left: calc(100% + #{map-get($watchProps, borderWidth)});
+	}
+}

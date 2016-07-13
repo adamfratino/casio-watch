@@ -1,0 +1,15 @@
+@import "common/variables";
+@import "common/mixins";
+@import "common/base";
+@import "common/fonts";
+@import "common/animations";
+
+#{$project-prefix} {
+	@import "components/header";
+	@import "components/subheader";
+	@import "components/body";
+	@import "components/buttons";
+	@import "components/footer";
+}
+
+@import "common/helpers";

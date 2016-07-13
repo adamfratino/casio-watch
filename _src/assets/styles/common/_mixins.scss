@@ -1,0 +1,9 @@
+@mixin redDot(
+$color: map-get($color, red),
+$size: 6px) {
+	background-color: $color;
+	border-radius: 50%;
+	display: inline-block;
+	height: $size;
+	width: $size;
+}

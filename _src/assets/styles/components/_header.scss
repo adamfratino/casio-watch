@@ -1,0 +1,19 @@
+&__header {
+	margin-bottom: 5px;
+	&-logo {
+		color: white;
+		font-family: map-get($font, logo);
+		font-size: 1.7em;
+		font-weight: 700;
+		margin-right: 10px;
+		text-transform: uppercase;
+	}
+	&-alarm {
+		color: map-get($color, gold);
+		font-family: map-get($font, default);
+		font-size: 1em;
+		font-weight: 800;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+}

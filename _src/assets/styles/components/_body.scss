@@ -1,0 +1,101 @@
+&__body {
+	background-color: map-get($color, lcd);
+	box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.75);
+	color: darken(map-get($color, digits), 10%);
+	font-family: map-get($font, digital);
+	letter-spacing: 2px;
+	margin: 10px 0;
+	padding: 5px 10px;
+	position: relative;
+	text-align: right;
+	-webkit-text-stroke: 0.5px currentColor;
+
+	&-clockType {
+		display: inline-block;
+		font-family: map-get($font, default);
+		font-size: 0.8em;
+		font-weight: 700;
+		float: left;
+		padding-top: 20px;
+		text-align: right;
+		text-transform: uppercase;
+	}
+
+	&-date {
+		font-size: 2em;
+		padding-bottom: 5px;
+		padding-top: 5px;
+
+		&-day { margin-right: 25px; }
+	}
+
+	&-time {
+		&-h,
+		&-m {
+			display: inline-block;
+			font-size: 5.2em;
+		}
+		&-h::after { content: ":"; }
+		&-s {
+			font-size: 2.4em;
+			letter-spacing: 4px;
+			padding-left: 15px;
+		}
+	}
+
+	&-indicators {
+		color: white;
+		font-family: map-get($font, logo);
+		font-size: 0.8em;
+		font-weight: 400;
+		text-transform: uppercase;
+
+		& > span { position: absolute; }
+
+		&-light {
+			left: -40px;
+			top: 15px;
+			transform: rotate(90deg);
+
+			&::before {
+				@include redDot();
+				content: "";
+				margin-right: 5px;
+			}
+		}
+
+		&-mode {
+			bottom: 15px;
+			left: -40px;
+			transform: rotate(90deg);
+
+			&::after {
+				@include redDot();
+				content: "";
+				margin-left: 5px;
+			}
+		}
+
+		&-startStop {
+			bottom: 35px;
+			right: -62px;
+			transform: rotate(-90deg);
+
+			&::before {
+				@include redDot();
+				content: "";
+				margin-right: 5px;
+			}
+		}
+	}
+
+	&-stopwatch {
+		&-header {
+			@extend .watch__body-date;
+			text-align: center;
+		}
+		&-m { @extend .watch__body-time-h; }
+		&-s { @extend .watch__body-time-m; }
+		&-ms { @extend .watch__body-time-s; }
+	}
+}

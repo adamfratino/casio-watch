@@ -1,0 +1,4 @@
+rules:
+  color-no-invalid-hex: true
+  selector-no-id: true
+  block-no-empty: true

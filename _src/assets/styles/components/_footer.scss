@@ -1,0 +1,29 @@
+&__footer {
+	text-align: center;
+	&-illuminator {
+		color: map-get($color, red);
+		font-family: map-get($font, logo);
+		font-weight: 800;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		font-style: italic;
+
+		&::before,
+		&::after {
+			content: "\25BA";
+			display: inline-block;
+			font-size: 0.8em;
+			font-style: normal;
+			padding-left: 5px;
+		}
+
+		&::before { transform: scaleX(-1); }
+	}
+	&-waterResist {
+		color: map-get($color, gold);
+		font-family: map-get($font, logo);
+		font-weight: 700;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+}

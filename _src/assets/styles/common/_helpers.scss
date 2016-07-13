@@ -1,0 +1,6 @@
+.js {
+	&-show { display: block; }
+	&-hide { display: none; }
+	&-invisible { visibility: hidden; }
+	&-indiglo { background-color: map-get($color, indiglo); }
+}
