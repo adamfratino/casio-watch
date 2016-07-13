@@ -5,10 +5,13 @@
 	font-size: 14px;
 	left: 10px;
 	line-height: 1.4;
-	top: 10px;
+	max-width: 280px;
 	padding: 15px;
 	position: absolute;
-	max-width: 280px;
+	text-align: left;
+	top: 10px;
+
+	@media (max-width: 1000px) { display: none; }
 
 	ul {
 		padding-left: 10px;
