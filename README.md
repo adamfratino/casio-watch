@@ -1,3 +1,5 @@
+IO PAGE: http://88mpg.github.io/casio-watch
+
 # casio-watch
 
 Trying to rebuild my Casio digital watch with HTML, CSS, JS.
@@ -17,8 +19,6 @@ Trying to rebuild my Casio digital watch with HTML, CSS, JS.
 
 - Toggle start and stop using the `Start/Stop` button
 - Reset the stopwatch using the `Light` button
-
-http://88mpg.github.io/casio-watch
 
 ### Setup
 
